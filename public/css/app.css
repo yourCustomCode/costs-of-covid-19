@@ -10882,3 +10882,171 @@ a.text-dark:focus {
   }
 }
 
+body {
+  font-family: Cabin, Helvetica Neue, Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  background-image: url("/assets/img/bg.jpg");
+  background-size: auto;
+}
+
+.navbar-light .navbar-brand,
+.navbar-light .navbar-brand:hover,
+.navbar-light .navbar-brand:focus {
+  color: #fff;
+}
+
+.navbar-light .navbar-toggler {
+  color: #fff;
+}
+
+.navbar-light .navbar-nav .nav-item:hover {
+  background-color: #ffffff17;
+}
+
+.navbar-light .navbar-nav .nav-link,
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-link:focus {
+  color: #fff;
+}
+
+.cov-header {
+  color: #fff;
+  background-color: #763535;
+  font-weight: bold;
+}
+
+.cov-bg-wrapper {
+  max-width: 90%;
+  margin: auto;
+  color: #fff;
+}
+
+.cov-damage {
+  color: #fff;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.cov-damage-alert-label {
+  font-size: 0.9rem;
+  margin: 35px 0 10px 0;
+}
+
+.cov-damage-alert-val {
+  font-size: 2rem;
+  margin: 0;
+  background: #5c3232;
+  padding: 20px 0;
+}
+
+.cov-damage-success-label {
+  font-size: 0.9rem;
+  margin: 35px 0 10px 0;
+}
+
+.cov-damage-success-val {
+  font-size: 2.5rem;
+  margin: 0;
+  background: #355c32;
+  padding: 20px 0;
+}
+
+.cov-damage-warning-label {
+  font-size: 0.9rem;
+  margin: 35px 0 10px 0;
+}
+
+.cov-damage-warning-val {
+  font-size: 2rem;
+  margin: 0;
+  background: #5b5c32;
+  padding: 20px 0;
+}
+
+.cov-participate {
+  margin: 50px auto;
+  display: inline-block;
+  font-size: 1.3rem;
+  background: #345c32;
+  border-radius: 5px;
+  border: 0;
+  padding: 10px;
+}
+
+.cov-stats {
+  #background-color: #7c8c7c;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.cov-stats .cov-stat {
+  padding: 5px;
+  margin: 10px 0;
+  border-radius: 5px;
+  background-color: #baceb9;
+}
+
+.cov-stats .cov-stat .cov-stat-label {
+  margin: 10px;
+}
+
+.cov-stats .cov-stat .cov-stat-val {
+  font-weight: bold;
+  background-color: #7c8c7c;
+  border-radius: 5px;
+  margin-bottom: 3px;
+  color: #fff;
+}
+
+.cov-footer {
+  background-color: #763535;
+  padding: 15px;
+  text-align: center;
+  color: #fff;
+}
+
+.cov-footer a,
+.cov-footer a:hover,
+.cov-footer a:focus {
+  color: #fff;
+  text-decoration: underline;
+}
+
+@media (min-width: 768px) {
+  .cov-bg-wrapper {
+    max-width: 80%;
+    margin: auto;
+    text-align: center;
+  }
+
+  .cov-damage-alert-label {
+    font-size: 1.2rem;
+  }
+
+  .cov-damage-success-label {
+    font-size: 1.2rem;
+  }
+
+  .cov-damage-warning-label {
+    font-size: 1.2rem;
+  }
+
+  .cov-damage-alert-val {
+    font-size: 4rem;
+  }
+
+  .cov-damage-success-val {
+    font-size: 5.5rem;
+  }
+
+  .cov-damage-warning-val {
+    font-size: 3rem;
+  }
+
+  .cov-participate {
+    font-size: 2rem;
+    padding: 20px;
+    margin: 100px auto;
+  }
+}
+

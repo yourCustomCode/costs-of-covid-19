@@ -64,7 +64,7 @@
                     revenue_loss_total: '-',
                     revenue_loss_left: '-',
                     credit_sum: '-',
-                    recent_col_1: [],
+                    recent_col_1: [[]],
                     recent_col_2: []
                 },
             }
