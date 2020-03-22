@@ -54,33 +54,12 @@
                 </div>
             </div><br/>
             <div class="card">
-                <div class="card-header">Letzte 10 vergebene Kredite</div>
+                <div class="card-header">Letzte 4 vergebene Kredite</div>
 
                 <div class="card-body" id="recent-credits">
 
                 </div>
-            </div><br/>
-            <div class="card">
-                <div class="card-header">Letzte 10 eingetragene Jahresumsätze 2019</div>
-
-                <div class="card-body" id="recent-rev-last">
-
-                </div>
-            </div><br/>
-            <div class="card">
-                <div class="card-header">Letzte 10 eingetragene Jahresumsätze 2020</div>
-
-                <div class="card-body" id="recent-rev-real">
-
-                </div>
-            </div><br/>
-            <div class="card">
-                <div class="card-header">Letzte 10 eingetragene erwartete Umsätze 2020</div>
-
-                <div class="card-body" id="recent-rev-exp">
-
-                </div>
-            </div><br/>
+            </div>
         </div>
     </div>
 </div>

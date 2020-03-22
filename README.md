@@ -36,7 +36,7 @@ Mit dieser Plattform können an die betroffenen Unternehmen durch eine schnelle,
 * Begrenzung der Kredite auf bspw. 10 T€ / Monat, um insb. kleine Unternehmen und Selbstständige zu unterstützen
 * Als Anreiz für die Unternehmen, die Daten zu teilen
 
-### Frameworks
+### Frameworks/DB
 
 * Laravel
 * vue.js
@@ -88,6 +88,7 @@ Eine funktionierende Demo kann sich _unter folgender [Website](https://costsofco
 * Angaben zu diskutieren
 * Fonds zur Kreditfinanzierung aufsetzen
 * Bekanntmachung der Website bei Unternehmen in Deutschland
+* Kreditvergabe-Algorithmus muss noch aufgebaut / programmiert werden
 
 
 
