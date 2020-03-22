@@ -1,4 +1,4 @@
-#Costs of COVID-19
+# Costs of COVID-19
 
 
 ## Überblick
@@ -6,9 +6,9 @@
 * [Über das Projekt](#about-the-project)
   * [Ziele](#ziele)
   * [Frameworks](#frameworks)
-* [Installation](#getting-started)
+* [Installation](#installation)
   * [Voraussetzungen](#voraussetzungen)
-  * [Installation](#installation)
+  * [Installieren](#installieren)
 * [Demo](#demo)
 * [Roadmap](#roadmap)
 * [Contributing](#contributing)
@@ -51,7 +51,7 @@ Um eine lokale Version zu nutzenm nüssen folgende Schritte beachtet werden.
 * Composer
 * Datenbank
 
-### Installation
+### Installieren
 
 1. Repo klonen
 ```sh
