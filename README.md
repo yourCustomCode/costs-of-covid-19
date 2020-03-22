@@ -19,6 +19,10 @@
 
 ## Über das Projekt
 
+Keinem nützt es, erst in 2 Jahren den tatsächlichen wirtschaftlichen Schaden der Corona-Krise zu bemessen. Rettungspakete und Unterstützungen müssen zeitnah bei den richtigen Unternehmen ankommen. Insbesondere kleine Unternehmen und Selbstständige sind von den Auswirkungen des Covid19-Virus so stark betroffen, dass sie Angst um ihre Existenzgrundlage haben.
+
+Mit dieser Plattform können an die betroffenen Unternehmen durch eine schnelle, standardisierte Kreditprüfung kurzfristig kleinere Darlehen zur Kompensation der entstandenen Umsatzeinbußen ausgegeben werden. Durch die Offenlegung der Daten der Unternehmen erhalten der Bund und die Länder eine Indikation zu dem wirtschaftlichen Schaden in Echtzeit. Dies soll sie in die Lage versetzen zeitnah mit geeigneten Rettungspaketen reagieren zu können.
+
 ### Ziele
 
 #### Echtzeitmessung des in Deutschland entstandenen wirtschaftlichen Schadens
@@ -78,7 +82,13 @@ Eine funktionierende Demo kann sich _unter folgender [Website](https://costsofco
 
 ## Roadmap
 
-TBD
+### Allgemein:
+* Die Domain muss eingetragen werden
+* Abstimmung mit dem Finanzamt / Bundesanzeiger, um elektronische Übermittlung der Daten zur Verifizierung der
+* Angaben zu diskutieren
+* Fonds zur Kreditfinanzierung aufsetzen
+* Bekanntmachung der Website bei Unternehmen in Deutschland
+
 
 
 
