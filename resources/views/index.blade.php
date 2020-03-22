@@ -2,20 +2,12 @@
 
 <script>
     window.addEventListener("load", function() {
-        getLoss();
-        getRecentCredit();
-        getRecentRevLast();
-        getRecentRevReal();
-        getRecentRevExp();
+        getDisplayData();
 
-        setInterval(getLoss, 1000);
-        setInterval(getRecentCredit, 10000);
-        setInterval(getRecentRevLast, 10000);
-        setInterval(getRecentRevReal, 10000);
-        setInterval(getRecentRevExp, 10000);
+        setInterval(getDisplayData, 1000);
     });
 
-    function getLoss() {
+    function getDisplayData() {
         var request = new XMLHttpRequest();
 
         request.onreadystatechange = function() {
@@ -28,95 +20,21 @@
                 document.getElementById("total-loss").innerHTML = totalLoss + " €";
                 document.getElementById("total-credit").innerHTML = totalCredit + " €";
                 document.getElementById("total-left").innerHTML = totalLeft + " €";
+
+                var recentCredits = data["recent_credits"];
+                var listStr = "";
+
+                for (var i = 0; i < recentCredits.length; i++)
+                {
+                    var date = new Date(recentCredits[i]["date_granted"]).toLocaleDateString("de-DE");
+                    listStr =  listStr + Math.round(recentCredits[i]["amount"]).toLocaleString("de") + " € : " + date + "<br/>";
+                }
+
+                document.getElementById("recent-credits").innerHTML = listStr;
             }
         }
 
         request.open("GET", "/api/total", true);
-        request.send();
-    }
-
-    function getRecentCredit() {
-        var request = new XMLHttpRequest();
-
-        request.onreadystatechange = function() {
-            if (this.readyState == 4 && this.status == 200) {
-                var data = JSON.parse(request.response);
-                var listStr = "";
-
-                for (var i = 0; i < data.length; i++)
-                {
-                    var date = new Date(data[i]["date_granted"]).toLocaleDateString("de-DE");
-                    listStr =  listStr + Math.round(data[i]["amount"]).toLocaleString("de") + " € : " + date + "<br/>";
-                }
-
-                document.getElementById("recent-credit").innerHTML = listStr;
-            }
-        }
-
-        request.open("GET", "/api/recent/credit", true);
-        request.send();
-    }
-
-    function getRecentRevLast() {
-        var request = new XMLHttpRequest();
-
-        request.onreadystatechange = function() {
-            if (this.readyState == 4 && this.status == 200) {
-                var data = JSON.parse(request.response);
-                var listStr = "";
-
-                for (var i = 0; i < data.length; i++)
-                {
-                    listStr =  listStr + Math.round(data[i]["amount"]).toLocaleString("de") + " €<br/>";
-                }
-
-                document.getElementById("recent-rev-last").innerHTML = listStr;
-            }
-        }
-
-        request.open("GET", "/api/recent/rev/last", true);
-        request.send();
-    }
-
-    function getRecentRevReal() {
-        var request = new XMLHttpRequest();
-
-        request.onreadystatechange = function() {
-            if (this.readyState == 4 && this.status == 200) {
-                var data = JSON.parse(request.response);
-                var listStr = "";
-
-                for (var i = 0; i < data.length; i++)
-                {
-                    listStr =  listStr + Math.round(data[i]["amount"]).toLocaleString("de") + " €<br/>";
-                }
-
-                document.getElementById("recent-rev-real").innerHTML = listStr;
-            }
-        }
-
-        request.open("GET", "/api/recent/rev/real", true);
-        request.send();
-    }
-
-    function getRecentRevExp() {
-        var request = new XMLHttpRequest();
-
-        request.onreadystatechange = function() {
-            if (this.readyState == 4 && this.status == 200) {
-                var data = JSON.parse(request.response);
-                var listStr = "";
-
-                for (var i = 0; i < data.length; i++)
-                {
-                    listStr =  listStr + Math.round(data[i]["amount"]).toLocaleString("de") + " €<br/>";
-                }
-
-                document.getElementById("recent-rev-exp").innerHTML = listStr;
-            }
-        }
-
-        request.open("GET", "/api/recent/rev/exp", true);
         request.send();
     }
 </script>
@@ -138,7 +56,7 @@
             <div class="card">
                 <div class="card-header">Letzte 10 vergebene Kredite</div>
 
-                <div class="card-body" id="recent-credit">
+                <div class="card-body" id="recent-credits">
 
                 </div>
             </div><br/>

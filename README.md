@@ -3,7 +3,7 @@
 
 ## Überblick
 
-* [Über das Projekt](#about-the-project)
+* [Über das Projekt](#über-das-projekt)
   * [Ziele](#ziele)
   * [Frameworks](#frameworks)
 * [Installation](#installation)
@@ -36,7 +36,7 @@ Mit dieser Plattform können an die betroffenen Unternehmen durch eine schnelle,
 * Begrenzung der Kredite auf bspw. 10 T€ / Monat, um insb. kleine Unternehmen und Selbstständige zu unterstützen
 * Als Anreiz für die Unternehmen, die Daten zu teilen
 
-### Framworks
+### Frameworks
 
 * Laravel
 * vue.js

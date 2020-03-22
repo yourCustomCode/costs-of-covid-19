@@ -29,7 +29,7 @@ Route::post('/profile/submit/revenue/current', 'FormController@addRevCurrent')->
 
 //GET API
 Route::get('/api/total/', 'DataController@getTotal');
-Route::get('/api/recent/credit', 'DataController@getRecentCredits');
-Route::get('/api/recent/rev/last', 'DataController@getRecentRevLast');
-Route::get('/api/recent/rev/real', 'DataController@getRecentRevReal');
-Route::get('/api/recent/rev/exp', 'DataController@getRecentRevExp');
+//Route::get('/api/recent/credit', 'DataController@getRecentCredits');
+//Route::get('/api/recent/rev/last', 'DataController@getRecentRevLast');
+//Route::get('/api/recent/rev/real', 'DataController@getRecentRevReal');
+//Route::get('/api/recent/rev/exp', 'DataController@getRecentRevExp');
