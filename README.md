@@ -97,7 +97,7 @@ Contributions machen ein Open Source Projekt aus und helfen bei der Entwicklung 
 
 ## Kontakt
 
-* Philipp Hartmann - XXX (Projektmanagement)
+* Philipp Hartmann - philipp.hartmann@pwc.com (Projektmanagement)
 * Stefan Wild - XXX (Frontend)
 * Florian Lorch - XXX (Frontend)
 * Tim Ganther - tim@yourcustomcode.com (Backend)
