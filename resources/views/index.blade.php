@@ -1,66 +1,13 @@
 @extends('layouts.app')
 
-<script>
-    window.addEventListener("load", function() {
-        getDisplayData();
-
-        setInterval(getDisplayData, 1000);
-    });
-
-    function getDisplayData() {
-        var request = new XMLHttpRequest();
-
-        request.onreadystatechange = function() {
-            if (this.readyState == 4 && this.status == 200) {
-                var data = JSON.parse(request.response);
-                var totalLoss = Math.round(data["revenue_loss_total"]).toLocaleString("de");
-                var totalCredit = Math.round(data["credit_sum"]).toLocaleString("de");
-                var totalLeft = Math.round(data["revenue_loss_left"]).toLocaleString("de");
-
-                document.getElementById("total-loss").innerHTML = totalLoss + " €";
-                document.getElementById("total-credit").innerHTML = totalCredit + " €";
-                document.getElementById("total-left").innerHTML = totalLeft + " €";
-
-                var recentCredits = data["recent_credits"];
-                var listStr = "";
-
-                for (var i = 0; i < recentCredits.length; i++)
-                {
-                    var date = new Date(recentCredits[i]["date_granted"]).toLocaleDateString("de-DE");
-                    listStr =  listStr + Math.round(recentCredits[i]["amount"]).toLocaleString("de") + " € : " + date + "<br/>";
-                }
-
-                document.getElementById("recent-credits").innerHTML = listStr;
-            }
-        }
-
-        request.open("GET", "/api/total", true);
-        request.send();
-    }
-</script>
-
 @section('content')
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">Startseite</div>
-
-                <div class="card-body">
-                    Entstandener Schaden: <span id="total-loss"></span></br>
-                    Verhinderter Schaden: <span id="total-credit"></span></br>
-                    Verbliebener Schaden: <span id="total-left"></span></br>
-                    Hier werden aktuelle Werte angezeigt...
-                </div>
-            </div><br/>
-            <div class="card">
-                <div class="card-header">Letzte 4 vergebene Kredite</div>
-
-                <div class="card-body" id="recent-credits">
-
-                </div>
-            </div>
-        </div>
-    </div>
+<div class="cov-bg-wrapper">
+    <!--    <h3 class="cov-damage cov-damage-alert-label">BISHER ENTSTANDENER SCHADEN</h3>-->
+    <!--    <h2 class="cov-damage cov-damage-alert-val">1.654.518.563 €</h2>-->
+    <!--    <h3 class="cov-damage cov-damage-success-label">VERHINDERTER SCHADEN</h3>-->
+    <!--    <h2 class="cov-damage cov-damage-success-val">854.518.563 €</h2>-->
+    <!--    <h3 class="cov-damage cov-damage-warning-label">VERBLIEBENER SCHADEN</h3>-->
+    <!--    <h2 class="cov-damage cov-damage-warning-val">754.518.563 €</h2>-->
+    <frontend-total></frontend-total>
 </div>
 @endsection

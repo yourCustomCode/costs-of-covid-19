@@ -18,6 +18,10 @@ Route::get('/', function () {
     return view('index');
 });
 
+Route::get('/impressum', function () {
+    return view('impressum');
+});
+
 Auth::routes();
 
 Route::get('/profile', 'HomeController@index')->name('profile');
