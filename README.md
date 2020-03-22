@@ -97,9 +97,8 @@ Contributions machen ein Open Source Projekt aus und helfen bei der Entwicklung 
 
 ## Kontakt
 
-Tim Ganther      - tim@yourcustomcode.com        (Backend)
-Louis Linke      - louis@yourcustomcode.com      (Backend)
-Stefan Wild      - XXX
-Tim Ganther      - XXX
-Florian Lorch    - XXX      (Frontend)
-Luca Löffler     - XXX      (Frontend)
+* Philipp Hartmann - XXX (Projektmanagement)
+* Stefan Wild - XXX (Frontend)
+* Florian Lorch - XXX (Frontend)
+* Tim Ganther - tim@yourcustomcode.com (Backend)
+* Louis Linke - louis@yourcustomcode.com (Backend)
