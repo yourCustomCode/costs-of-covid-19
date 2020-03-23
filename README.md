@@ -47,12 +47,13 @@ Mit dieser Plattform können an die betroffenen Unternehmen durch eine schnelle,
 
 ## Installation
 
-Um eine lokale Version zu nutzenm nüssen folgende Schritte beachtet werden.
+Um eine lokale Version zu nutzen nüssen folgende Schritte beachtet werden.
 
 ### Voraussetzungen
 
 * Laravel
 * Composer
+* npm
 * Datenbank
 
 ### Installieren
@@ -65,7 +66,11 @@ git clone https://github.com/yourCustomCode/costs-of-covid-19.git
 ```sh
 composer install
 ```
-3. .env anpassen
+3. NPM
+```sh
+npm install
+```
+4. .env anpassen
 ```sh
 nano .env
 ```
@@ -75,7 +80,7 @@ nano .env
 
 ## Demo
 
-Eine funktionierende Demo kann sich _unter folgender [Website](https://costsofcovid-19.cloud.ycc-serv.com/)_ angesehen werden.
+Eine funktionierende Demo kann sich unter folgender _[Website](https://costsofcovid-19.cloud.ycc-serv.com/)_ angesehen werden.
 
 
 
