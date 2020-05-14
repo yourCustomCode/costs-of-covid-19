@@ -76,15 +76,6 @@ nano .env
 ```
 
 
-
-
-## Demo
-
-Eine funktionierende Demo kann sich unter folgender _[Website](https://costsofcovid-19.cloud.ycc-serv.com/)_ angesehen werden.
-
-
-
-
 ## Roadmap
 
 ### Allgemein:
